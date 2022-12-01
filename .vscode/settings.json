@@ -1,0 +1,4 @@
+{
+  "conventionalCommits.scopes": ["UI", "theme"],
+  "java.configuration.updateBuildConfiguration": "automatic"
+}

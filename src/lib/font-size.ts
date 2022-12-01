@@ -1,0 +1,25 @@
+const FONT_SIZE_30 = 30;
+const FONT_SIZE_28 = 26;
+const FONT_SIZE_24 = 22;
+const FONT_SIZE_22 = 20;
+const FONT_SIZE_20 = 18;
+const FONT_SIZE_18 = 16;
+const FONT_SIZE_16 = 14;
+const FONT_SIZE_14 = 12;
+const FONT_SIZE_13 = 11;
+const FONT_SIZE_12 = 10;
+const FONT_SIZE_10 = 8;
+
+export {
+  FONT_SIZE_30,
+  FONT_SIZE_28,
+  FONT_SIZE_24,
+  FONT_SIZE_22,
+  FONT_SIZE_20,
+  FONT_SIZE_18,
+  FONT_SIZE_16,
+  FONT_SIZE_14,
+  FONT_SIZE_13,
+  FONT_SIZE_12,
+  FONT_SIZE_10,
+};
