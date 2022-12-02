@@ -7,7 +7,7 @@ interface IFProps extends DivProps {
 }
 const SafeView: React.FC<IFProps> = ({ children, ...rest }: any) => {
   return (
-    <Div {...rest} px={16}>
+    <Div {...rest} px={10}>
       {children}
     </Div>
   );
