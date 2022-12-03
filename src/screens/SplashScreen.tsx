@@ -38,9 +38,9 @@ export const languages = [
     languageCode: "en-US",
   },
   {
-    languageName: "English UK",
-    fontFamily: "NotoSansArabic",
-    languageCode: "en-US",
+    languageName: "Bangla",
+    fontFamily: "Inter",
+    languageCode: "bn",
   },
 ];
 interface IFProps {

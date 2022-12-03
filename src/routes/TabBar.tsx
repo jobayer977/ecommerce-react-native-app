@@ -12,6 +12,7 @@ import { BottomTabBarProps } from "@react-navigation/bottom-tabs";
 import { Div } from "react-native-magnus";
 import { PrimaryColor } from "../lib/color-manager";
 import React from "react";
+import { localizedStrings } from "../lib/LocalizationStrings";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 const useVisibilityAnimation = (visible: boolean): ViewStyle => {
   const animation = React.useRef<Animated.Value>(
@@ -68,19 +69,19 @@ export const TabBar: React.FC<BottomTabBarProps> = ({
         // }}
       >
         <BottomNavigationTab
-          title={"Home"}
+          title={localizedStrings.home}
           icon={(props) => <Icon name="home-outline" {...props} />}
         />
         <BottomNavigationTab
-          title={"Categories"}
+          title={localizedStrings.categories}
           icon={(props) => <Icon name="grid-outline" {...props} />}
         />
         <BottomNavigationTab
-          title={"Notifications"}
+          title={localizedStrings.notifications}
           icon={(props) => <Icon name="bell-outline" {...props} />}
         />
         <BottomNavigationTab
-          title="Account"
+          title={localizedStrings.account}
           icon={(props) => <Icon name="person-outline" {...props} />}
         />
       </BottomNavigation>

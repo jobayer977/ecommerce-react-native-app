@@ -8,3 +8,6 @@ export const DangerColor = "#FF5B5B";
 export const SuccessColor = "#7BE236";
 export const GrayLightColor = "#BBC4CA";
 export const FLashGray = "#F9F9F9";
+export const Yellow = "#FFC108";
+export const GrayBg = "#F8F8F8";
+export const Black = "#000000";

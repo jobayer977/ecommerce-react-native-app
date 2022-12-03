@@ -1,3 +1,4 @@
+import AccountScreen from "../screens/dashboard/account-tab/AccountScreen";
 import HomeScreen from "../screens/dashboard/home/HomeScreen";
 import React from "react";
 import { TabBar } from "./TabBar";
@@ -19,7 +20,7 @@ const AfterLoginStack = (): React.ReactElement => {
         <Tab.Screen name="DeliveriesScreen" component={HomeScreen} />
         <Tab.Screen name="Map" component={HomeScreen} />
         <Tab.Screen name="History" component={HomeScreen} />
-        <Tab.Screen name="Profile" component={HomeScreen} />
+        <Tab.Screen name="AccountScreen" component={AccountScreen} />
       </Tab.Navigator>
     );
   };

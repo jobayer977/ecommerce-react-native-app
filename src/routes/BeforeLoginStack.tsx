@@ -1,9 +1,12 @@
 import { useDispatch, useSelector } from "react-redux";
 
+import AccountScreen from "../screens/dashboard/account-tab/AccountScreen";
+import CategoriesScreen from "../screens/dashboard/categories-tab/CategoriesScreen";
 import EnterAppScreen from "../screens/EnterAppScreen";
 import HomeScreen from "../screens/dashboard/home/HomeScreen";
 import React from "react";
 import SignInScreen from "../screens/SignInScreen";
+import SignUpScreen from "../screens/SignUpScreen";
 import { TabBar } from "./TabBar";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -35,9 +38,9 @@ const BeforeLoginStack = (): React.ReactElement => {
         }}
       >
         <Tab.Screen name="HomeScreen" component={HomeScreen} />
-        <Tab.Screen name="HomeNotificationScreen" component={HomeScreen} />
+        <Tab.Screen name="CategoriesScreen" component={CategoriesScreen} />
         <Tab.Screen name="ContactUSScreen" component={HomeScreen} />
-        <Tab.Screen name="AccountScreen" component={HomeScreen} />
+        <Tab.Screen name="AccountScreen" component={AccountScreen} />
       </Tab.Navigator>
     );
   };
@@ -51,8 +54,8 @@ const BeforeLoginStack = (): React.ReactElement => {
         <Stack.Screen name="HomeTabStack" component={HomeTabStack} />
         {!isAuthenticated && (
           <Stack.Group>
-            <Stack.Screen name="SignInScreenModal" component={HomeScreen} />
-            <Stack.Screen name="SignUpScreenModal" component={HomeScreen} />
+            <Stack.Screen name="SignInScreen" component={SignInScreen} />
+            <Stack.Screen name="SignUpScreen" component={SignUpScreen} />
           </Stack.Group>
         )}
         <Stack.Screen name="PrivacyPolicyScreen" component={HomeScreen} />
