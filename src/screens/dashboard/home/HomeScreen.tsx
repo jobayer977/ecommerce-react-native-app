@@ -151,7 +151,14 @@ const HomeScreen = () => {
             )}
           />
           <SafeView mb={10}>
-            <BaseTitle title="Deals of the Day" />
+            <BaseTitle
+              title="Deals of the Day"
+              onPress={() => {
+                navigation.navigate("ProductsScreen", {
+                  title: "Deals of the Day",
+                });
+              }}
+            />
             <FlatList
               showsHorizontalScrollIndicator={false}
               horizontal
