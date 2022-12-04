@@ -675,7 +675,7 @@ SPEC CHECKSUMS:
   react-native-geolocation-service: 608e1da71a1ac31b4de64d9ef2815f697978c55b
   react-native-maps: ed6470f754c140c75aabff757e154cf52a1636a8
   react-native-netinfo: 51b6a79a6f1729d853aa0bd5085e441f7ef32aa1
-  react-native-restart: 45c8dca02491980f2958595333cbccd6877cb57e
+  react-native-restart: 8af4579c94638f38bd9074ec477ebf087de87dc5
   react-native-safe-area-context: ec0d85aca8110dae9327430a9541fec165352dab
   react-native-splash-screen: 4312f786b13a81b5169ef346d76d33bc0c6dc457
   React-perflogger: c9161ff0f1c769993cd11d2751e4331ff4ceb7cd
