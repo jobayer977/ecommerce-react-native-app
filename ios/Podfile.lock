@@ -382,15 +382,6 @@ PODS:
     - React-Core
   - RNGestureHandler (2.8.0):
     - React-Core
-  - RNImageCropPicker (0.38.1):
-    - React-Core
-    - React-RCTImage
-    - RNImageCropPicker/QBImagePickerController (= 0.38.1)
-    - TOCropViewController
-  - RNImageCropPicker/QBImagePickerController (0.38.1):
-    - React-Core
-    - React-RCTImage
-    - TOCropViewController
   - RNReanimated (2.9.1):
     - DoubleConversion
     - FBLazyVector
@@ -428,7 +419,6 @@ PODS:
   - RNVectorIcons (9.2.0):
     - React-Core
   - SocketRocket (0.6.0)
-  - TOCropViewController (2.6.1)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -502,7 +492,6 @@ DEPENDENCIES:
   - ReactNativeLocalization (from `../node_modules/react-native-localization`)
   - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
-  - RNImageCropPicker (from `../node_modules/react-native-image-crop-picker`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNSnackbar (from `../node_modules/react-native-snackbar`)
@@ -527,7 +516,6 @@ SPEC REPOS:
     - lottie-ios
     - OpenSSL-Universal
     - SocketRocket
-    - TOCropViewController
     - YogaKit
 
 EXTERNAL SOURCES:
@@ -619,8 +607,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-async-storage/async-storage"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
-  RNImageCropPicker:
-    :path: "../node_modules/react-native-image-crop-picker"
   RNReanimated:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
@@ -675,7 +661,7 @@ SPEC CHECKSUMS:
   react-native-geolocation-service: 608e1da71a1ac31b4de64d9ef2815f697978c55b
   react-native-maps: ed6470f754c140c75aabff757e154cf52a1636a8
   react-native-netinfo: 51b6a79a6f1729d853aa0bd5085e441f7ef32aa1
-  react-native-restart: 45c8dca02491980f2958595333cbccd6877cb57e
+  react-native-restart: 8af4579c94638f38bd9074ec477ebf087de87dc5
   react-native-safe-area-context: ec0d85aca8110dae9327430a9541fec165352dab
   react-native-splash-screen: 4312f786b13a81b5169ef346d76d33bc0c6dc457
   React-perflogger: c9161ff0f1c769993cd11d2751e4331ff4ceb7cd
@@ -693,14 +679,12 @@ SPEC CHECKSUMS:
   ReactNativeLocalization: be60e3a0e6e8db88d9f8190719ffb75e1cdab22a
   RNCAsyncStorage: 889cea2408e52fe71da475306dcef43951577da0
   RNGestureHandler: 62232ba8f562f7dea5ba1b3383494eb5bf97a4d3
-  RNImageCropPicker: 648356d68fbf9911a1016b3e3723885d28373eda
   RNReanimated: 2cf7451318bb9cc430abeec8d67693f9cf4e039c
   RNScreens: 34cc502acf1b916c582c60003dc3089fa01dc66d
   RNSnackbar: b6cbf294923b8d6c6056592bca87527c81a0130b
   RNSVG: ecd661f380a07ba690c9c5929c475a44f432d674
   RNVectorIcons: fcc2f6cb32f5735b586e66d14103a74ce6ad61f8
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
-  TOCropViewController: edfd4f25713d56905ad1e0b9f5be3fbe0f59c863
   Yoga: 7ab6e3ee4ce47d7b789d1cb520163833e515f452
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
