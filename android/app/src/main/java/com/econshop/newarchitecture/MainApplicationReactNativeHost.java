@@ -1,4 +1,4 @@
-package com.offerstory.newarchitecture;
+package com.econshop.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.fabric.ReactNativeConfig;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.offerstory.BuildConfig;
-import com.offerstory.newarchitecture.components.MainComponentsRegistry;
-import com.offerstory.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.econshop.BuildConfig;
+import com.econshop.newarchitecture.components.MainComponentsRegistry;
+import com.econshop.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 
