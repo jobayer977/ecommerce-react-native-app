@@ -13,6 +13,7 @@ import {
 } from "../../../constants/color-manager";
 import React, { useEffect } from "react";
 
+import AntDesign from "react-native-vector-icons/AntDesign";
 import BaseTitle from "../../../components/BaseTitle";
 import CachedImage from "../../../components/CachedImage";
 import Carousel from "react-native-reanimated-carousel";
@@ -27,7 +28,6 @@ import { getFontNameType } from "../../../lib/font-names";
 import { selectAppFontFamily } from "../../../redux/SplashScreenReducer";
 import { useNavigation } from "@react-navigation/core";
 import { useSelector } from "react-redux";
-
 const HomeScreen = () => {
   const navigation = useNavigation();
   const { appFontFamily } = useSelector(
@@ -67,8 +67,8 @@ const HomeScreen = () => {
           </Div>
           <Div ml={10}>
             <TouchableOpacity>
-              <Icon
-                name="shopping-cart-outline"
+              <AntDesign
+                name="stepforward"
                 fill={PrimaryColor}
                 width={24}
                 height={24}
@@ -151,7 +151,14 @@ const HomeScreen = () => {
             )}
           />
           <SafeView mb={10}>
-            <BaseTitle title="Deals of the Day" />
+            <BaseTitle
+              title="Deals of the Day"
+              onPress={() => {
+                navigation.navigate("ProductsScreen", {
+                  title: "Deals of the Day",
+                });
+              }}
+            />
             <FlatList
               showsHorizontalScrollIndicator={false}
               horizontal

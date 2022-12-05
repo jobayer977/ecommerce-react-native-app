@@ -4,6 +4,7 @@ import AccountScreen from "../screens/dashboard/account-tab/AccountScreen";
 import CategoriesScreen from "../screens/dashboard/categories-tab/CategoriesScreen";
 import EnterAppScreen from "../screens/EnterAppScreen";
 import HomeScreen from "../screens/dashboard/home/HomeScreen";
+import ProductsScreen from "../screens/dashboard/home/ProductsScreen";
 import React from "react";
 import SignInScreen from "../screens/SignInScreen";
 import SignUpScreen from "../screens/SignUpScreen";
@@ -13,7 +14,6 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createStructuredSelector } from "reselect";
 import { selectAppFontFamily } from "../redux/SplashScreenReducer";
 import { selectIsAuthenticated } from "../redux/auth.reducer";
-
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 const BeforeLoginStack = (): React.ReactElement => {
@@ -60,6 +60,7 @@ const BeforeLoginStack = (): React.ReactElement => {
         )}
         <Stack.Screen name="PrivacyPolicyScreen" component={HomeScreen} />
         <Stack.Screen name="TermsOfServiceScree" component={HomeScreen} />
+        <Stack.Screen name="ProductsScreen" component={ProductsScreen} />
       </Stack.Navigator>
     </>
   );

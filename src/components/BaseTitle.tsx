@@ -11,8 +11,9 @@ import { useSelector } from "react-redux";
 
 interface IFProps extends DivProps {
   title: string;
+  onPress?: () => void;
 }
-const BaseTitle: React.FC<IFProps> = ({ title, ...rest }) => {
+const BaseTitle: React.FC<IFProps> = ({ title, onPress, ...rest }) => {
   const { appFontFamily } = useSelector(
     createStructuredSelector({
       appFontFamily: selectAppFontFamily,
@@ -33,7 +34,9 @@ const BaseTitle: React.FC<IFProps> = ({ title, ...rest }) => {
       >
         {title}
       </Text>
-      <Button appearance="ghost">View All</Button>
+      <Button appearance="ghost" onPress={onPress}>
+        View All
+      </Button>
     </Div>
   );
 };
