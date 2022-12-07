@@ -2,6 +2,58 @@
   "migIndex": 1,
   "data": [
     {
+      "path": "src/assets/fonts/AntDesign.ttf",
+      "sha1": "4e77868439280fb434d4697c7b911271406c81f3"
+    },
+    {
+      "path": "src/assets/fonts/Entypo.ttf",
+      "sha1": "12b5670eb178138f77285d5f2c246d3cc5fa67d6"
+    },
+    {
+      "path": "src/assets/fonts/EvilIcons.ttf",
+      "sha1": "91d377ea3cf47490b256c2ed081704a7dabdae0c"
+    },
+    {
+      "path": "src/assets/fonts/Feather.ttf",
+      "sha1": "e6604258b1ced5efd51360875d782fca65381d47"
+    },
+    {
+      "path": "src/assets/fonts/FontAwesome.ttf",
+      "sha1": "13b1eab65a983c7a73bc7997c479d66943f7c6cb"
+    },
+    {
+      "path": "src/assets/fonts/FontAwesome5_Brands.ttf",
+      "sha1": "3fa2d67cef22da5c3f3eb5730c6afbd6fecf0372"
+    },
+    {
+      "path": "src/assets/fonts/FontAwesome5_Regular.ttf",
+      "sha1": "7d849a3981a716e2ba4a84634bc57d0b8054a6a3"
+    },
+    {
+      "path": "src/assets/fonts/FontAwesome5_Solid.ttf",
+      "sha1": "c1b9fae262f42868c075ac865a8ab34920e20a2c"
+    },
+    {
+      "path": "src/assets/fonts/Fontisto.ttf",
+      "sha1": "c090a3ec96a3f1bb9b615c2f3f204ce0dcdcdbc3"
+    },
+    {
+      "path": "src/assets/fonts/Foundation.ttf",
+      "sha1": "4b2bce6c792493a4a5716b6fec2dbefe89492c3f"
+    },
+    {
+      "path": "src/assets/fonts/Ionicons.ttf",
+      "sha1": "b5281fbfa43129abc3e412dd938cfcf0b77de999"
+    },
+    {
+      "path": "src/assets/fonts/MaterialCommunityIcons.ttf",
+      "sha1": "4c2a838b00dbb5e8bb1b368fce0de534e8eb241c"
+    },
+    {
+      "path": "src/assets/fonts/MaterialIcons.ttf",
+      "sha1": "1943803d652750c8ec60415f1e57401c70e72d25"
+    },
+    {
       "path": "src/assets/fonts/NotoSansArabic-Black.ttf",
       "sha1": "9b1295a32faac069e31b4fabfef2d44463d5f226"
     },
@@ -36,6 +88,10 @@
     {
       "path": "src/assets/fonts/NotoSansArabic-Thin.ttf",
       "sha1": "88050e31eb6a1346500298b54b8f5eb26e7e0a06"
+    },
+    {
+      "path": "src/assets/fonts/Octicons.ttf",
+      "sha1": "56acefc0731f35ee23b195b1c8cb5fa94a0db97b"
     },
     {
       "path": "src/assets/fonts/Poppins-Black.ttf",
@@ -110,6 +166,14 @@
       "sha1": "fb8fccca21550e71135f92bbaf8a2e8a12c90465"
     },
     {
+      "path": "src/assets/fonts/SimpleLineIcons.ttf",
+      "sha1": "9ffb81a5a11112e292f2cc323e98486bad597599"
+    },
+    {
+      "path": "src/assets/fonts/Zocial.ttf",
+      "sha1": "6a48a962b06cc3acbdfd61df0d9a34744eea5e8d"
+    },
+    {
       "path": "src/assets/fonts/interBlack.ttf",
       "sha1": "95aa9f4a4bcbf61bdfdb0730b27942410d84dc0c"
     },
@@ -182,6 +246,58 @@
       "sha1": "9e991d26dfbd4372dc1d356155b2ccd542e354d4"
     },
     {
+      "path": "src/assets/fonts/AntDesign.ttf",
+      "sha1": "4e77868439280fb434d4697c7b911271406c81f3"
+    },
+    {
+      "path": "src/assets/fonts/Entypo.ttf",
+      "sha1": "12b5670eb178138f77285d5f2c246d3cc5fa67d6"
+    },
+    {
+      "path": "src/assets/fonts/EvilIcons.ttf",
+      "sha1": "91d377ea3cf47490b256c2ed081704a7dabdae0c"
+    },
+    {
+      "path": "src/assets/fonts/Feather.ttf",
+      "sha1": "e6604258b1ced5efd51360875d782fca65381d47"
+    },
+    {
+      "path": "src/assets/fonts/FontAwesome.ttf",
+      "sha1": "13b1eab65a983c7a73bc7997c479d66943f7c6cb"
+    },
+    {
+      "path": "src/assets/fonts/FontAwesome5_Brands.ttf",
+      "sha1": "3fa2d67cef22da5c3f3eb5730c6afbd6fecf0372"
+    },
+    {
+      "path": "src/assets/fonts/FontAwesome5_Regular.ttf",
+      "sha1": "7d849a3981a716e2ba4a84634bc57d0b8054a6a3"
+    },
+    {
+      "path": "src/assets/fonts/FontAwesome5_Solid.ttf",
+      "sha1": "c1b9fae262f42868c075ac865a8ab34920e20a2c"
+    },
+    {
+      "path": "src/assets/fonts/Fontisto.ttf",
+      "sha1": "c090a3ec96a3f1bb9b615c2f3f204ce0dcdcdbc3"
+    },
+    {
+      "path": "src/assets/fonts/Foundation.ttf",
+      "sha1": "4b2bce6c792493a4a5716b6fec2dbefe89492c3f"
+    },
+    {
+      "path": "src/assets/fonts/Ionicons.ttf",
+      "sha1": "b5281fbfa43129abc3e412dd938cfcf0b77de999"
+    },
+    {
+      "path": "src/assets/fonts/MaterialCommunityIcons.ttf",
+      "sha1": "4c2a838b00dbb5e8bb1b368fce0de534e8eb241c"
+    },
+    {
+      "path": "src/assets/fonts/MaterialIcons.ttf",
+      "sha1": "1943803d652750c8ec60415f1e57401c70e72d25"
+    },
+    {
       "path": "src/assets/fonts/NotoSansArabic-Black.ttf",
       "sha1": "9b1295a32faac069e31b4fabfef2d44463d5f226"
     },
@@ -216,6 +332,10 @@
     {
       "path": "src/assets/fonts/NotoSansArabic-Thin.ttf",
       "sha1": "88050e31eb6a1346500298b54b8f5eb26e7e0a06"
+    },
+    {
+      "path": "src/assets/fonts/Octicons.ttf",
+      "sha1": "56acefc0731f35ee23b195b1c8cb5fa94a0db97b"
     },
     {
       "path": "src/assets/fonts/Poppins-Black.ttf",
@@ -290,6 +410,14 @@
       "sha1": "fb8fccca21550e71135f92bbaf8a2e8a12c90465"
     },
     {
+      "path": "src/assets/fonts/SimpleLineIcons.ttf",
+      "sha1": "9ffb81a5a11112e292f2cc323e98486bad597599"
+    },
+    {
+      "path": "src/assets/fonts/Zocial.ttf",
+      "sha1": "6a48a962b06cc3acbdfd61df0d9a34744eea5e8d"
+    },
+    {
       "path": "src/assets/fonts/interBlack.ttf",
       "sha1": "95aa9f4a4bcbf61bdfdb0730b27942410d84dc0c"
     },
@@ -360,22 +488,154 @@
     {
       "path": "src/assets/fonts/interUIBlackItalic.ttf",
       "sha1": "9e991d26dfbd4372dc1d356155b2ccd542e354d4"
+    },
+    {
+      "path": "src/assets/images/auth-bg.jpeg",
+      "sha1": "9b16577b7a8c44b0c17fa63f64e4e2c2b83dc5b1"
+    },
+    {
+      "path": "src/assets/images/businesssolutions-logo.png",
+      "sha1": "b62eff2f3a603e13546a40d479409b5c96366178"
+    },
+    {
+      "path": "src/assets/images/cat1.png",
+      "sha1": "e7cb1321afdc33278c5018ff2e7633d791a24960"
+    },
+    {
+      "path": "src/assets/images/cat2.png",
+      "sha1": "c360ae88f0c54c74f4576f1d11ffaf1c75db08eb"
+    },
+    {
+      "path": "src/assets/images/cat3.png",
+      "sha1": "c2186d8f113b4f438e2c2de4f4f33215b65235f3"
+    },
+    {
+      "path": "src/assets/images/cat4.png",
+      "sha1": "04764e8b488ed2d80fa68717b8d683da45d58d3b"
+    },
+    {
+      "path": "src/assets/images/cat5.png",
+      "sha1": "b223f1a1b05496210b351064c828171bdfde693a"
+    },
+    {
+      "path": "src/assets/images/cat6.png",
+      "sha1": "7135f9c42c5042c125fcc996e310905a02e620ac"
+    },
+    {
+      "path": "src/assets/images/comingsoon copy.png",
+      "sha1": "0dca53911c4ee966b5aabd650c92c7400dfa6f71"
     },
     {
       "path": "src/assets/images/comingsoon.png",
       "sha1": "0dca53911c4ee966b5aabd650c92c7400dfa6f71"
     },
     {
+      "path": "src/assets/images/demo-banner1.jpg",
+      "sha1": "e76a61add621bbb158426350ceac9ef188276672"
+    },
+    {
+      "path": "src/assets/images/demo-banner2.jpg",
+      "sha1": "c2c8b123908839cbf40822b5c0dc0b875aa30088"
+    },
+    {
+      "path": "src/assets/images/demo-banner3.jpg",
+      "sha1": "7ce8ca356b5fbbd6c56cfb76fcf56051232146c8"
+    },
+    {
+      "path": "src/assets/images/demo-user.png",
+      "sha1": "5bdd52a79880ec8de486d66b39526474b4081452"
+    },
+    {
+      "path": "src/assets/images/icons/Cards.png",
+      "sha1": "f70283141bc5cd166a1434fe04814975d6d855cc"
+    },
+    {
+      "path": "src/assets/images/icons/Contsact.png",
+      "sha1": "682d9e505de72bc522f472ac73ff1085bcc729bb"
+    },
+    {
+      "path": "src/assets/images/icons/Referal.png",
+      "sha1": "da5bd3a6be18198ce4540b475bcb8c6c099d0ee7"
+    },
+    {
+      "path": "src/assets/images/icons/Settings.png",
+      "sha1": "21b2c3ca2a14c3251a97200942e9560f94bd842f"
+    },
+    {
+      "path": "src/assets/images/icons/Transactions.png",
+      "sha1": "63d74818d7f2b64fd15a36cb63fa4156003242fc"
+    },
+    {
+      "path": "src/assets/images/icons/angleBackWhite.png",
+      "sha1": "84a3a854657ec3d58bb124d42b2000471aa27f9e"
+    },
+    {
+      "path": "src/assets/images/icons/arrow-left.png",
+      "sha1": "46144511e3efdc446c5023e123f90eb1df80af0b"
+    },
+    {
+      "path": "src/assets/images/icons/arrow-right.png",
+      "sha1": "c2749dbc1649ff79c50b06ba0a09fbe2bba2c0da"
+    },
+    {
+      "path": "src/assets/images/icons/bag.png",
+      "sha1": "8b7b32bc5396849ee34cea24226fe002090a974f"
+    },
+    {
+      "path": "src/assets/images/icons/bell.png",
+      "sha1": "3a779e305cfafb44a7a1e1f77667c82422b2bbf5"
+    },
+    {
+      "path": "src/assets/images/icons/black_back.png",
+      "sha1": "1d3c6a633e1a0a2f23e7c81fff1be7fe238518ac"
+    },
+    {
+      "path": "src/assets/images/icons/carbon_time copy.png",
+      "sha1": "1070a3cbe0887528d31daf56dd8855a07fecf2f5"
+    },
+    {
       "path": "src/assets/images/icons/carbon_time.png",
       "sha1": "1070a3cbe0887528d31daf56dd8855a07fecf2f5"
+    },
+    {
+      "path": "src/assets/images/icons/cart-white.png",
+      "sha1": "942468ce693804582de13def7f1feffcd734fde9"
+    },
+    {
+      "path": "src/assets/images/icons/fb.png",
+      "sha1": "5d04d5bc9b3f4ba9180ef8ca7ba61e81ff3e5199"
+    },
+    {
+      "path": "src/assets/images/icons/filter.png",
+      "sha1": "32167e8a6687fca012a42e145d03c97de0a7aeb0"
+    },
+    {
+      "path": "src/assets/images/icons/finger.png",
+      "sha1": "232aa7680812146422f15cd8474cfb11a84af2fa"
+    },
+    {
+      "path": "src/assets/images/icons/home copy.png",
+      "sha1": "557ff0eee08f1b4b8fd0be109724a74ea65bf97f"
     },
     {
       "path": "src/assets/images/icons/home.png",
       "sha1": "557ff0eee08f1b4b8fd0be109724a74ea65bf97f"
     },
     {
+      "path": "src/assets/images/icons/left-arrow copy.png",
+      "sha1": "3564ea4c2ba5c6d808beadb4a86236d8bf46f3a5"
+    },
+    {
       "path": "src/assets/images/icons/left-arrow.png",
       "sha1": "3564ea4c2ba5c6d808beadb4a86236d8bf46f3a5"
+    },
+    {
+      "path": "src/assets/images/icons/map copy.png",
+      "sha1": "5a6cc93f7cf5e0a60cfa59a6db5e427438439098"
+    },
+    {
+      "path": "src/assets/images/icons/map-pin copy.png",
+      "sha1": "1fe1048fa0d148e2dc2a7c1e7abe8106b8ce2fe4"
     },
     {
       "path": "src/assets/images/icons/map-pin.png",
@@ -386,28 +646,100 @@
       "sha1": "5a6cc93f7cf5e0a60cfa59a6db5e427438439098"
     },
     {
+      "path": "src/assets/images/icons/map_pin_lightgray copy.png",
+      "sha1": "86c1c90bd40485c49fa8091ff501e80f2bb4f259"
+    },
+    {
       "path": "src/assets/images/icons/map_pin_lightgray.png",
       "sha1": "86c1c90bd40485c49fa8091ff501e80f2bb4f259"
+    },
+    {
+      "path": "src/assets/images/icons/minimize copy.png",
+      "sha1": "2a6b173c118162f6494494169dafa13b2499d789"
     },
     {
       "path": "src/assets/images/icons/minimize.png",
       "sha1": "2a6b173c118162f6494494169dafa13b2499d789"
     },
     {
+      "path": "src/assets/images/icons/minus.png",
+      "sha1": "63e668d8bffb2e91efbfab71a02c0fe350c7a014"
+    },
+    {
+      "path": "src/assets/images/icons/phone copy.png",
+      "sha1": "4db1f11c0140e141618f647670916cf66e0f44e2"
+    },
+    {
       "path": "src/assets/images/icons/phone.png",
       "sha1": "4db1f11c0140e141618f647670916cf66e0f44e2"
+    },
+    {
+      "path": "src/assets/images/icons/plus.png",
+      "sha1": "e91bf73614431be71686a5bc80a3b775f86e1ac8"
+    },
+    {
+      "path": "src/assets/images/icons/profile-icon.png",
+      "sha1": "bbf153adbf5dd6f9b044937637c468476ec9e60a"
+    },
+    {
+      "path": "src/assets/images/icons/search-white.png",
+      "sha1": "6e12d4295e48b9e7d8cb973f35e5a92b65842c9b"
+    },
+    {
+      "path": "src/assets/images/icons/support copy.png",
+      "sha1": "9dcf834c59fcf4ed78483c7ba4ea9ec53c6d8b61"
     },
     {
       "path": "src/assets/images/icons/support.png",
       "sha1": "9dcf834c59fcf4ed78483c7ba4ea9ec53c6d8b61"
     },
     {
+      "path": "src/assets/images/icons/trash.png",
+      "sha1": "c52f33bb96f84abab61712e01df7c38be34caf68"
+    },
+    {
+      "path": "src/assets/images/icons/whatsapp.png",
+      "sha1": "9c2d62aceb06c667228749aeff6f05b0c03c9981"
+    },
+    {
+      "path": "src/assets/images/icons/white_close copy.png",
+      "sha1": "a0528828a1e8cf2bb60b4e84619ae0b90de198df"
+    },
+    {
       "path": "src/assets/images/icons/white_close.png",
       "sha1": "a0528828a1e8cf2bb60b4e84619ae0b90de198df"
     },
     {
+      "path": "src/assets/images/image-picker.png",
+      "sha1": "4a796d618bb657f89f017f081f0b786017b7524a"
+    },
+    {
+      "path": "src/assets/images/logo copy.png",
+      "sha1": "0ac901558f7315196fa0cacbba779017caf3b927"
+    },
+    {
+      "path": "src/assets/images/logo-black.png",
+      "sha1": "df642dda6cc079dc060e6c72cbda0ea34bcc19c8"
+    },
+    {
+      "path": "src/assets/images/logo-primary-color.png",
+      "sha1": "9ed6f7789745fe9ce3509d58be6c8a5919468388"
+    },
+    {
+      "path": "src/assets/images/logo-red.png",
+      "sha1": "4e13fbba6e4580104323a94119bbb2a3a7b92cf5"
+    },
+    {
+      "path": "src/assets/images/logo-white.png",
+      "sha1": "7545ef9c9dab296ded0e307379210498273f5a57"
+    },
+    {
       "path": "src/assets/images/logo.png",
       "sha1": "0ac901558f7315196fa0cacbba779017caf3b927"
+    },
+    {
+      "path": "src/assets/images/powead-by.png",
+      "sha1": "b62eff2f3a603e13546a40d479409b5c96366178"
     }
   ]
 }

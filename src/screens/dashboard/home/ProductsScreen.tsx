@@ -3,16 +3,13 @@ import {
   DarkColor,
   GrayBg,
   PrimaryColor,
-  WhiteColor,
 } from "../../../constants/color-manager";
 import { Div, Image } from "react-native-magnus";
 import {
   FlatList,
   SafeAreaView,
   StyleSheet,
-  Text,
   TouchableOpacity,
-  View,
 } from "react-native";
 import React, { useEffect, useState } from "react";
 import {
@@ -22,15 +19,15 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigation, useRoute } from "@react-navigation/native";
 
-import { Icon } from "@ui-kitten/components";
 import { ImageAssets } from "../../../lib/assets-managers";
 import Ionicons from "react-native-vector-icons/Ionicons";
+import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import ProductCard from "../../../components/ProductCard";
 import SafeView from "../../../components/SafeView";
+import { commonStyles } from "../../../common.styles";
 import { createStructuredSelector } from "reselect";
 import { deviceWidth } from "../../../lib/constant";
 import { getFontNameType } from "../../../lib/font-names";
-import { localizedStrings } from "../../../lib/LocalizationStrings";
 import { selectAppFontFamily } from "../../../redux/SplashScreenReducer";
 
 const ProductsScreen = () => {
@@ -56,7 +53,7 @@ const ProductsScreen = () => {
       title: route.params?.title || "",
       headerShadowVisible: false,
       headerTitleStyle: [
-        styles.headerTitleStyle,
+        commonStyles.headerTitleStyle,
         { fontFamily: getFontNameType(appFontFamily, "Bold") },
       ],
       headerTitleAlign: "center",
@@ -79,22 +76,12 @@ const ProductsScreen = () => {
         <Div mr={10} row>
           <Div ml={5}>
             <TouchableOpacity>
-              <Ionicons
-                name="funnel-outline"
-                fill={DarkColor}
-                width={24}
-                height={24}
-              />
+              <Ionicons name="funnel-outline" size={17} color={DarkColor} />
             </TouchableOpacity>
           </Div>
-          <Div ml={10}>
+          <Div ml={15}>
             <TouchableOpacity>
-              <Icon
-                name="shopping-cart-outline"
-                fill={PrimaryColor}
-                width={24}
-                height={24}
-              />
+              <MaterialIcons name="sort" size={17} color={DarkColor} />
             </TouchableOpacity>
           </Div>
         </Div>
@@ -111,7 +98,15 @@ const ProductsScreen = () => {
           showsHorizontalScrollIndicator={false}
           renderItem={({ item }) => (
             <Div w={(deviceWidth - 20) / 2} p={5}>
-              <ProductCard />
+              <TouchableOpacity
+                onPress={() => {
+                  navigation.navigate("ProductDetailsScreen", {
+                    title: item.title,
+                  });
+                }}
+              >
+                <ProductCard />
+              </TouchableOpacity>
             </Div>
           )}
         />

@@ -1,4 +1,4 @@
-import { DarkColor } from "./lib/color-manager";
+import { DarkColor } from "./constants/color-manager";
 import { StyleSheet } from "react-native";
 export const commonStyles = StyleSheet.create({
   container: {

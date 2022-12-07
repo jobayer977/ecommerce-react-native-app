@@ -66,9 +66,13 @@ const HomeScreen = () => {
             </TouchableOpacity>
           </Div>
           <Div ml={10}>
-            <TouchableOpacity>
-              <AntDesign
-                name="stepforward"
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate("CartScreen");
+              }}
+            >
+              <Icon
+                name="shopping-cart-outline"
                 fill={PrimaryColor}
                 width={24}
                 height={24}
