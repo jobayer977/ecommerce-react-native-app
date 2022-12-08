@@ -1,9 +1,10 @@
-import { DarkColor } from "./constants/color-manager";
+import { DarkColor, GrayBg } from "./constants/color-manager";
+
 import { StyleSheet } from "react-native";
 export const commonStyles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: GrayBg,
   },
   headerTitleStyle: {
     fontSize: 14,

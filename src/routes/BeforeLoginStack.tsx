@@ -1,10 +1,12 @@
 import { useDispatch, useSelector } from "react-redux";
 
 import AccountScreen from "../screens/dashboard/account-tab/AccountScreen";
+import AddNewAddressScreen from "../screens/dashboard/account-tab/AddNewAddressScreen";
 import CartScreen from "../screens/dashboard/home/CartScreen";
 import CategoriesScreen from "../screens/dashboard/categories-tab/CategoriesScreen";
 import EnterAppScreen from "../screens/EnterAppScreen";
 import HomeScreen from "../screens/dashboard/home/HomeScreen";
+import ManageAddressScreen from "../screens/dashboard/account-tab/ManageAddressScreen";
 import ProductDetailsScreen from "../screens/dashboard/home/ProductDetailsScreen";
 import ProductsScreen from "../screens/dashboard/home/ProductsScreen";
 import React from "react";
@@ -68,6 +70,14 @@ const BeforeLoginStack = (): React.ReactElement => {
           component={ProductDetailsScreen}
         />
         <Stack.Screen name="CartScreen" component={CartScreen} />
+        <Stack.Screen
+          name="ManageAddressScreen"
+          component={ManageAddressScreen}
+        />
+        <Stack.Screen
+          name="AddNewAddressScreen"
+          component={AddNewAddressScreen}
+        />
       </Stack.Navigator>
     </>
   );

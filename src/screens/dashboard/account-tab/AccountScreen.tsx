@@ -36,7 +36,6 @@ import { getFontNameType } from "../../../lib/font-names";
 import { localizedStrings } from "../../../lib/LocalizationStrings";
 import { selectAppFontFamily } from "../../../redux/SplashScreenReducer";
 import { useNavigation } from "@react-navigation/native";
-
 const AccountScreen = () => {
   const [appLoading, setAppLoading] = useState(false);
   const navigation = useNavigation();
@@ -183,6 +182,41 @@ const AccountScreen = () => {
                   ]}
                 >
                   {localizedStrings.manageYourNotifications}
+                </Text>
+              </View>
+              <View style={[styles.leftButtonContainer, { marginRight: 15 }]}>
+                <Image
+                  source={ImageAssets.black_back}
+                  style={styles.rightIcon}
+                />
+              </View>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.buttonContainer}
+              activeOpacity={0.8}
+              onPress={() => {
+                navigation.navigate("ManageAddressScreen");
+              }}
+            >
+              <View style={[styles.leftButtonContainer]}>
+                <Image source={ImageAssets.bell} style={styles.leftIcon} />
+              </View>
+              <View style={styles.centerContainer}>
+                <Text
+                  style={[
+                    styles.buttonTitle,
+                    { fontFamily: getFontNameType(appFontFamily, "Bold") },
+                  ]}
+                >
+                  {localizedStrings.manageAddress}
+                </Text>
+                <Text
+                  style={[
+                    styles.descriptionText,
+                    { fontFamily: getFontNameType(appFontFamily, "Regular") },
+                  ]}
+                >
+                  {localizedStrings.manageYourAddress}
                 </Text>
               </View>
               <View style={[styles.leftButtonContainer, { marginRight: 15 }]}>

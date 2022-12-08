@@ -17,7 +17,6 @@ import { KeyboardAvoidingView } from "../components/KeyboardAvoidingView";
 import React from "react";
 import { localizedStrings } from "../lib/LocalizationStrings";
 import { useFormik } from "formik";
-
 const SignupSchema = Yup.object().shape({
   name: Yup.string()
     .required(localizedStrings.nameIsRequired)
@@ -96,66 +95,6 @@ const SignUpScreen = () => {
                 placeholder={localizedStrings.enterYourName}
                 size="large"
               />
-              <Div mt={10}>
-                <Input
-                  label={localizedStrings.email}
-                  placeholder={localizedStrings.enterYourEmail}
-                  onChangeText={handleChange("email")}
-                  onBlur={() => setFieldTouched("email")}
-                  value={values.email}
-                  status={errors.email ? "danger" : "basic"}
-                  caption={errors.email}
-                  size="large"
-                />
-              </Div>
-              <Div mt={10}>
-                <Input
-                  label={localizedStrings.password}
-                  placeholder={localizedStrings.password}
-                  onChangeText={handleChange("password")}
-                  onBlur={() => setFieldTouched("password")}
-                  value={values.password}
-                  secureTextEntry
-                  status={errors.password ? "danger" : "basic"}
-                  caption={errors.password}
-                  size="large"
-                  textAlign={I18nManager.isRTL ? "right" : "left"}
-                />
-              </Div>
-              <Div mt={15}>
-                <Radio
-                  checked={checked}
-                  onChange={(nextChecked) => setChecked(nextChecked)}
-                >
-                  <Div row alignItems="center">
-                    <Text>{localizedStrings.iReadAndAgreeToThe} </Text>
-                    <TouchableOpacity
-                      onPress={() => {
-                        Linking.openURL("https://mdm.ps/");
-                      }}
-                    >
-                      <Text color={PrimaryColor}>
-                        {localizedStrings.termsOfService}
-                      </Text>
-                    </TouchableOpacity>
-                    <Text> {localizedStrings.and} </Text>
-                    <TouchableOpacity
-                      onPress={() => {
-                        Linking.openURL("https://mdm.ps/");
-                      }}
-                    >
-                      <Text color={PrimaryColor}>
-                        {localizedStrings.privacyPolicy}
-                      </Text>
-                    </TouchableOpacity>
-                  </Div>
-                </Radio>
-              </Div>
-              <Div mt={50}>
-                <Button size="large" onPress={handleSubmit}>
-                  {localizedStrings.singUp}
-                </Button>
-              </Div>
               <Div mt={25} row justifyContent="center">
                 <Text
                   mr={5}
@@ -165,17 +104,13 @@ const SignUpScreen = () => {
                 >
                   {localizedStrings.alreadyHaveAnAccount}{" "}
                 </Text>
-                <TouchableOpacity
-                  onPress={() => {
-                    navigation.navigate("SignInScreen");
-                  }}
-                >
+                <TouchableOpacity onPress={() => {}}>
                   <Text
                     textAlign="center"
                     fontWeight="500"
                     color={PrimaryColor}
                   >
-                    {localizedStrings.signIn}
+                    {localizedStrings.submit}
                   </Text>
                 </TouchableOpacity>
               </Div>
