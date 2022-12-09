@@ -9,6 +9,7 @@ import CheckoutShippingScreen from "../screens/dashboard/home/CheckoutShippingSc
 import EnterAppScreen from "../screens/EnterAppScreen";
 import HomeScreen from "../screens/dashboard/home/HomeScreen";
 import ManageAddressScreen from "../screens/dashboard/account-tab/ManageAddressScreen";
+import MyOrdersScreen from "../screens/dashboard/account-tab/MyOrdersScreen";
 import ProductDetailsScreen from "../screens/dashboard/home/ProductDetailsScreen";
 import ProductsScreen from "../screens/dashboard/home/ProductsScreen";
 import React from "react";
@@ -89,6 +90,7 @@ const BeforeLoginStack = (): React.ReactElement => {
           name="CheckoutPaymentMethodScreen"
           component={CheckoutPaymentMethodScreen}
         />
+        <Stack.Screen name="MyOrdersScreen" component={MyOrdersScreen} />
       </Stack.Navigator>
     </>
   );

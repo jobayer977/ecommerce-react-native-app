@@ -160,6 +160,44 @@ const AccountScreen = () => {
               style={styles.buttonContainer}
               activeOpacity={0.8}
               onPress={() => {
+                navigation.navigate("MyOrdersScreen");
+              }}
+            >
+              <View style={[styles.leftButtonContainer]}>
+                <Image
+                  source={ImageAssets.profileIcon}
+                  style={styles.leftIcon}
+                />
+              </View>
+              <View style={styles.centerContainer}>
+                <Text
+                  style={[
+                    styles.buttonTitle,
+                    { fontFamily: getFontNameType(appFontFamily, "Bold") },
+                  ]}
+                >
+                  {localizedStrings.myOrders}
+                </Text>
+                <Text
+                  style={[
+                    styles.descriptionText,
+                    { fontFamily: getFontNameType(appFontFamily, "Regular") },
+                  ]}
+                >
+                  {localizedStrings.viewYourOrders}
+                </Text>
+              </View>
+              <View style={[styles.leftButtonContainer, { marginRight: 15 }]}>
+                <Image
+                  source={ImageAssets.black_back}
+                  style={styles.rightIcon}
+                />
+              </View>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.buttonContainer}
+              activeOpacity={0.8}
+              onPress={() => {
                 navigation.navigate("NotificationScreen");
               }}
             >
@@ -493,6 +531,7 @@ const styles = StyleSheet.create({
     height: 25,
     width: 25,
     resizeMode: "contain",
+    transform: [{ rotate: "180deg" }],
   },
   centerContainer: {
     flex: 1,
