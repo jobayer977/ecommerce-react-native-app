@@ -75,6 +75,7 @@ let localizedStrings = new LocalizedStrings({
     save: "Save",
     pleaseChooseDistrict: "Please choose district",
     pleaseEnterYourPhoneNumber: "Please enter your phone number",
+    checkout: "Checkout",
   },
   bn: {
     SignInScreen: "সাইন ইন স্ক্রিন",
@@ -149,6 +150,7 @@ let localizedStrings = new LocalizedStrings({
     division: "বিভাগ",
     save: "সংরক্ষণ করুন",
     pleaseChooseDistrict: "জেলা নির্বাচন করুন",
+    checkout: "চেকআউট",
   },
 });
 let currentLocalizedLanguage = localizedStrings.getLanguage();

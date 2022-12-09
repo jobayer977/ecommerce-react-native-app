@@ -25,6 +25,7 @@ import { getFontNameType } from "../../../lib/font-names";
 import { localizedStrings } from "../../../lib/LocalizationStrings";
 import { selectAppFontFamily } from "../../../redux/SplashScreenReducer";
 import { useNavigation } from "@react-navigation/native";
+
 const ManageAddressScreen = () => {
   const [appLoading, setAppLoading] = useState(false);
   const navigation = useNavigation();
@@ -261,40 +262,43 @@ const ManageAddressScreen = () => {
             renderItem={({ item }) => (
               <Div mt={10} bg="white" px={10} py={14} rounded={5}>
                 <Text
-                  style={
-                    (styles.title,
+                  style={[
+                    styles.title,
                     {
                       fontFamily: getFontNameType(appFontFamily, "Bold"),
                       fontWeight: "bold",
-                      fontSize: 16,
-                    })
-                  }
+                      fontSize: 14,
+                    },
+                  ]}
                 >
                   {item.firstName}
                 </Text>
                 <Text
-                  style={
-                    (styles.title,
+                  style={[
+                    styles.title,
                     {
                       fontFamily: getFontNameType(appFontFamily, "Regular"),
                       fontWeight: "400",
                       marginBottom: 20,
+                      fontSize: 14,
+                      color: "#8F8F8F",
                       marginTop: 3,
-                    })
-                  }
+                    },
+                  ]}
                 >
                   {item.contactNumber}
                 </Text>
                 <Text
-                  style={
-                    (styles.title,
+                  style={[
+                    styles.title,
                     {
                       fontFamily: getFontNameType(appFontFamily, "Regular"),
                       fontWeight: "400",
-                      marginBottom: 20,
                       marginTop: 3,
-                    })
-                  }
+                      fontSize: 14,
+                      color: "#8F8F8F",
+                    },
+                  ]}
                 >
                   {item.address} {item.area} {item.city} {item.division}{" "}
                   {item.postalCode}

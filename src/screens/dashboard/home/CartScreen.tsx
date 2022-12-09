@@ -70,8 +70,8 @@ const CartScreen = () => {
   };
   const renderFooter = (): React.ReactElement => (
     <Layout style={styles.footer}>
-      <Text category="h5">Total Cost:</Text>
-      <Text category="h5">{`$${totalCost()}`}</Text>
+      <Text category="h6">Total Cost:</Text>
+      <Text category="h6">{`$${totalCost()}`}</Text>
     </Layout>
   );
   const renderProductItem = (
@@ -92,7 +92,13 @@ const CartScreen = () => {
         renderItem={renderProductItem}
         ListFooterComponent={renderFooter}
       />
-      <Button style={styles.checkoutButton} size="giant">
+      <Button
+        style={styles.checkoutButton}
+        size="giant"
+        onPress={() => {
+          navigation.navigate("CheckoutShippingScreen");
+        }}
+      >
         CHECKOUT
       </Button>
     </Layout>
