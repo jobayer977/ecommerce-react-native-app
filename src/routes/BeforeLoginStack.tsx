@@ -10,12 +10,14 @@ import EnterAppScreen from "../screens/EnterAppScreen";
 import HomeScreen from "../screens/dashboard/home/HomeScreen";
 import ManageAddressScreen from "../screens/dashboard/account-tab/ManageAddressScreen";
 import MyOrdersScreen from "../screens/dashboard/account-tab/MyOrdersScreen";
+import OrderDetailsScreen from "../screens/dashboard/account-tab/OrderDetailsScreen";
 import ProductDetailsScreen from "../screens/dashboard/home/ProductDetailsScreen";
 import ProductsScreen from "../screens/dashboard/home/ProductsScreen";
 import React from "react";
 import SignInScreen from "../screens/SignInScreen";
 import SignUpScreen from "../screens/SignUpScreen";
 import { TabBar } from "./TabBar";
+import WishListScreen from "../screens/dashboard/home/WishListScreen";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createStructuredSelector } from "reselect";
@@ -91,6 +93,11 @@ const BeforeLoginStack = (): React.ReactElement => {
           component={CheckoutPaymentMethodScreen}
         />
         <Stack.Screen name="MyOrdersScreen" component={MyOrdersScreen} />
+        <Stack.Screen
+          name="OrderDetailsScreen"
+          component={OrderDetailsScreen}
+        />
+        <Stack.Screen name="WishListScreen" component={WishListScreen} />
       </Stack.Navigator>
     </>
   );

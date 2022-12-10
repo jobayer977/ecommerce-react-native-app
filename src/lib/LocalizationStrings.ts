@@ -78,6 +78,7 @@ let localizedStrings = new LocalizedStrings({
     checkout: "Checkout",
     myOrders: "My Orders",
     viewYourOrders: "View your orders",
+    myWishList: "My Wish List",
   },
   bn: {
     SignInScreen: "সাইন ইন স্ক্রিন",
@@ -155,6 +156,7 @@ let localizedStrings = new LocalizedStrings({
     checkout: "চেকআউট",
     myOrders: "আমার অর্ডার",
     viewYourOrders: "আপনার অর্ডার দেখুন",
+    myWishList: "আমার ইচ্ছেতালিকা",
   },
 });
 let currentLocalizedLanguage = localizedStrings.getLanguage();
