@@ -1,22 +1,28 @@
 import { useDispatch, useSelector } from "react-redux";
 
+import AboutUSScreen from "../screens/AboutUSScreen";
 import AccountScreen from "../screens/dashboard/account-tab/AccountScreen";
 import AddNewAddressScreen from "../screens/dashboard/account-tab/AddNewAddressScreen";
 import CartScreen from "../screens/dashboard/home/CartScreen";
 import CategoriesScreen from "../screens/dashboard/categories-tab/CategoriesScreen";
 import CheckoutPaymentMethodScreen from "../screens/dashboard/home/CheckoutPaymentMethodScreen";
 import CheckoutShippingScreen from "../screens/dashboard/home/CheckoutShippingScreen";
-import EnterAppScreen from "../screens/EnterAppScreen";
+import DashboardScreen from "../screens/dashboard/account-tab/DashboardScreen";
+import EditProfileScreen from "../screens/dashboard/account-tab/EditProfileScreen";
 import HomeScreen from "../screens/dashboard/home/HomeScreen";
 import ManageAddressScreen from "../screens/dashboard/account-tab/ManageAddressScreen";
 import MyOrdersScreen from "../screens/dashboard/account-tab/MyOrdersScreen";
 import OrderDetailsScreen from "../screens/dashboard/account-tab/OrderDetailsScreen";
+import PrivacyPolicyScreen from "../screens/PrivacyPolicyScreen";
 import ProductDetailsScreen from "../screens/dashboard/home/ProductDetailsScreen";
 import ProductsScreen from "../screens/dashboard/home/ProductsScreen";
+import ProfileScreen from "../screens/dashboard/account-tab/ProfileScreen";
 import React from "react";
+import SettingsScreen from "../screens/dashboard/account-tab/SettingsScreen";
 import SignInScreen from "../screens/SignInScreen";
 import SignUpScreen from "../screens/SignUpScreen";
 import { TabBar } from "./TabBar";
+import TermsOfServiceScree from "../screens/TermsOfServiceScree";
 import WishListScreen from "../screens/dashboard/home/WishListScreen";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -68,8 +74,6 @@ const BeforeLoginStack = (): React.ReactElement => {
             <Stack.Screen name="SignUpScreen" component={SignUpScreen} />
           </Stack.Group>
         )}
-        <Stack.Screen name="PrivacyPolicyScreen" component={HomeScreen} />
-        <Stack.Screen name="TermsOfServiceScree" component={HomeScreen} />
         <Stack.Screen name="ProductsScreen" component={ProductsScreen} />
         <Stack.Screen
           name="ProductDetailsScreen"
@@ -98,6 +102,19 @@ const BeforeLoginStack = (): React.ReactElement => {
           component={OrderDetailsScreen}
         />
         <Stack.Screen name="WishListScreen" component={WishListScreen} />
+        <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
+        <Stack.Screen name="DashboardScreen" component={DashboardScreen} />
+        <Stack.Screen name="EditProfileScreen" component={EditProfileScreen} />
+        <Stack.Screen
+          name="TermsOfServiceScree"
+          component={TermsOfServiceScree}
+        />
+        <Stack.Screen
+          name="PrivacyPolicyScreen"
+          component={PrivacyPolicyScreen}
+        />
+        <Stack.Screen name="AboutUSScreen" component={AboutUSScreen} />
+        <Stack.Screen name="SettingsScreen" component={SettingsScreen} />
       </Stack.Navigator>
     </>
   );

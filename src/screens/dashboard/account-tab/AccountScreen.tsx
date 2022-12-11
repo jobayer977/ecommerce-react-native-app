@@ -1,7 +1,6 @@
 import {
   Alert,
   Image,
-  Linking,
   SafeAreaView,
   Share,
   StyleSheet,
@@ -112,14 +111,53 @@ const AccountScreen = () => {
               style={styles.buttonContainer}
               activeOpacity={0.8}
               onPress={() => {
-                if (isAuthenticated) {
-                  navigation.navigate("ProfileScreen");
-                } else {
-                  navigation.navigate("SignInScreen", {
-                    toScreen: "ProfileScreen",
-                    fromScreen: "AccountScreen",
-                  });
-                }
+                navigation.navigate("DashboardScreen");
+              }}
+            >
+              <View style={[styles.leftButtonContainer]}>
+                <Image
+                  source={ImageAssets.profileIcon}
+                  style={styles.leftIcon}
+                />
+              </View>
+              <View style={styles.centerContainer}>
+                <Text
+                  style={[
+                    styles.buttonTitle,
+                    { fontFamily: getFontNameType(appFontFamily, "Bold") },
+                  ]}
+                >
+                  {localizedStrings.dashboard}
+                </Text>
+                <Text
+                  style={[
+                    styles.descriptionText,
+                    { fontFamily: getFontNameType(appFontFamily, "Regular") },
+                  ]}
+                >
+                  {localizedStrings.dashboard}
+                </Text>
+              </View>
+              <View style={[styles.leftButtonContainer, { marginRight: 15 }]}>
+                <Image
+                  source={ImageAssets.black_back}
+                  style={styles.rightIcon}
+                />
+              </View>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.buttonContainer}
+              activeOpacity={0.8}
+              onPress={() => {
+                // if (isAuthenticated) {
+                //   navigation.navigate("ProfileScreen");
+                // } else {
+                //   navigation.navigate("SignInScreen", {
+                //     toScreen: "ProfileScreen",
+                //     fromScreen: "AccountScreen",
+                //   });
+                // }
+                navigation.navigate("ProfileScreen");
               }}
             >
               <View style={[styles.leftButtonContainer]}>
@@ -137,7 +175,7 @@ const AccountScreen = () => {
                 >
                   {isAuthenticated
                     ? localizedStrings.myProfile
-                    : localizedStrings.signInToYourAccount}
+                    : localizedStrings.myProfile}
                 </Text>
                 <Text
                   style={[
@@ -147,7 +185,7 @@ const AccountScreen = () => {
                 >
                   {isAuthenticated
                     ? localizedStrings.viewAndEditYourProfile
-                    : localizedStrings.setUpYourAccount}
+                    : localizedStrings.viewAndEditYourProfile}
                 </Text>
               </View>
               <View style={[styles.leftButtonContainer, { marginRight: 15 }]}>
@@ -464,7 +502,7 @@ const AccountScreen = () => {
               >
                 <TouchableOpacity
                   onPress={() => {
-                    Linking.openURL("https://mdm.ps/");
+                    navigation.navigate("TermsOfServiceScree");
                   }}
                 >
                   <Text style={{ color: PrimaryColor }}>
