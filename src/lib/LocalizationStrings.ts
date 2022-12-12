@@ -93,6 +93,8 @@ let localizedStrings = new LocalizedStrings({
     chooseYourLanguage: "Choose your language",
     language: "Language",
     fingerPrint: "Finger Print",
+    productOne: "Product One",
+    search: "Search",
   },
   bn: {
     SignInScreen: "সাইন ইন স্ক্রিন",
@@ -185,6 +187,8 @@ let localizedStrings = new LocalizedStrings({
     chooseYourLanguage: "আপনার ভাষা নির্বাচন করুন",
     language: "ভাষা",
     fingerPrint: "আঙুল ছাপ",
+    productOne: "পণ্য এক",
+    search: "অনুসন্ধান করুন",
   },
 });
 let currentLocalizedLanguage = localizedStrings.getLanguage();

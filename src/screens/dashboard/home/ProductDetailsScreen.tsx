@@ -68,11 +68,13 @@ const ProductDetailsScreen = () => {
     navigation.setOptions({
       headerShown: true,
       statusBarColor: PrimaryColor,
-      title: route.params?.title || "",
+      title: route.params?.title?.slice(0, 25) || "",
       headerShadowVisible: false,
       headerTitleStyle: [
         styles.headerTitleStyle,
-        { fontFamily: getFontNameType(appFontFamily, "Bold") },
+        {
+          fontFamily: getFontNameType(appFontFamily, "Bold"),
+        },
       ],
       headerTitleAlign: "center",
       headerLeft: () => (
@@ -85,7 +87,6 @@ const ProductDetailsScreen = () => {
             source={ImageAssets.black_back}
             h={32}
             w={32}
-            ml={10}
             resizeMode="contain"
           />
         </TouchableOpacity>
@@ -130,7 +131,12 @@ const ProductDetailsScreen = () => {
   );
   const renderHeader = (): React.ReactElement => (
     <Layout style={styles.header}>
-      <ImageBackground style={styles.image} source={product.image} />
+      <ImageBackground
+        style={styles.image}
+        source={{
+          uri: "https://loox.com.bd/cdn-cgi/imagedelivery/IEVmOmAlrv1BxorgilY5Og/0925a88b-ebaf-4935-208f-fc48a17ec200/public540x720",
+        }}
+      />
       <Layout style={styles.detailsContainer} level="1">
         <Text category="h6">{product.title}</Text>
         <Text style={styles.subtitle} appearance="hint" category="p2">

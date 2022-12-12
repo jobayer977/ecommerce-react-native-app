@@ -18,6 +18,7 @@ import ProductDetailsScreen from "../screens/dashboard/home/ProductDetailsScreen
 import ProductsScreen from "../screens/dashboard/home/ProductsScreen";
 import ProfileScreen from "../screens/dashboard/account-tab/ProfileScreen";
 import React from "react";
+import SearchScreen from "../screens/dashboard/home/SearchScreen";
 import SettingsScreen from "../screens/dashboard/account-tab/SettingsScreen";
 import SignInScreen from "../screens/SignInScreen";
 import SignUpScreen from "../screens/SignUpScreen";
@@ -115,6 +116,7 @@ const BeforeLoginStack = (): React.ReactElement => {
         />
         <Stack.Screen name="AboutUSScreen" component={AboutUSScreen} />
         <Stack.Screen name="SettingsScreen" component={SettingsScreen} />
+        <Stack.Screen name="SearchScreen" component={SearchScreen} />
       </Stack.Navigator>
     </>
   );

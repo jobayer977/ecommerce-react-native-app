@@ -98,15 +98,7 @@ const ProductsScreen = () => {
           showsHorizontalScrollIndicator={false}
           renderItem={({ item }) => (
             <Div w={(deviceWidth - 20) / 2} p={5}>
-              <TouchableOpacity
-                onPress={() => {
-                  navigation.navigate("ProductDetailsScreen", {
-                    title: item.title,
-                  });
-                }}
-              >
-                <ProductCard />
-              </TouchableOpacity>
+              <ProductCard />
             </Div>
           )}
         />

@@ -59,7 +59,7 @@ const AboutUSScreen = () => {
         <Div flex={1} justifyContent="center">
           <Div row justifyContent="center">
             <Animate.Image
-              source={ImageAssets.logoBlack}
+              source={ImageAssets.logoPrimaryColor}
               style={{ width: 150, height: 100, resizeMode: "contain" }}
               animation={{
                 from: {
@@ -92,9 +92,9 @@ const AboutUSScreen = () => {
               },
             ]}
           >
-            Yafa Industrial Tools company is a leading manufacturer of high
-            quality industrial tools and equipment. The company was established
-            in 1990 and has been growing steadily ever since.
+            Industrial Tools company is a leading manufacturer of high quality
+            industrial tools and equipment. The company was established in 1990
+            and has been growing steadily ever since.
           </Text>
         </Div>
         <Div>
@@ -143,7 +143,7 @@ const AboutUSScreen = () => {
               >
                 {localizedStrings.fax}
               </Text>
-              <Text style={styles.sclDescription}>+970 2 298 0000</Text>
+              <Text style={styles.sclDescription}>+970 2 298 0300</Text>
             </Div>
           </Div>
           <TouchableOpacity onPress={() => {}}>
@@ -174,14 +174,14 @@ const AboutUSScreen = () => {
                     },
                   ]}
                 >
-                  Eastern Industrial Zone, Nablus, Palestine.
+                  Eastern Industrial Zone, Nablus, US.
                 </Text>
               </Div>
             </Div>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => {
-              Linking.openURL("mailto:info@mdm.ps");
+              Linking.openURL("mailto:jondoe@mail.ps");
             }}
           >
             <Div row alignItems="center" mb={15}>
@@ -200,7 +200,7 @@ const AboutUSScreen = () => {
                     },
                   ]}
                 >
-                  {localizedStrings.email}
+                  jondoe@gmail.com
                 </Text>
                 <Text style={styles.sclDescription}>info@mdm.ps</Text>
               </Div>
@@ -232,7 +232,7 @@ const AboutUSScreen = () => {
             </Text>
             <Image
               ml={10}
-              source={ImageAssets.poweadBy}
+              source={ImageAssets.logoPrimaryColor}
               h={50}
               w={50}
               resizeMode="contain"

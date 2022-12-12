@@ -6,14 +6,9 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import {
-  GrayBg,
-  PrimaryColor,
-  WhiteColor,
-} from "../../../constants/color-manager";
+import { GrayBg, PrimaryColor } from "../../../constants/color-manager";
 import React, { useEffect } from "react";
 
-import AntDesign from "react-native-vector-icons/AntDesign";
 import BaseTitle from "../../../components/BaseTitle";
 import CachedImage from "../../../components/CachedImage";
 import Carousel from "react-native-reanimated-carousel";
@@ -28,6 +23,7 @@ import { getFontNameType } from "../../../lib/font-names";
 import { selectAppFontFamily } from "../../../redux/SplashScreenReducer";
 import { useNavigation } from "@react-navigation/core";
 import { useSelector } from "react-redux";
+
 const HomeScreen = () => {
   const navigation = useNavigation();
   const { appFontFamily } = useSelector(
@@ -56,7 +52,11 @@ const HomeScreen = () => {
       headerRight: () => (
         <Div mr={10} row>
           <Div ml={5}>
-            <TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate("SearchScreen");
+              }}
+            >
               <Icon
                 name="search-outline"
                 fill={PrimaryColor}
@@ -105,28 +105,36 @@ const HomeScreen = () => {
               data={CATEGORIES}
               showsHorizontalScrollIndicator={false}
               renderItem={({ item }) => (
-                <Div style={styles.catCard} mr={5} py={5} px={5}>
-                  <Image
-                    rounded={10}
-                    source={{
-                      uri: item.image,
-                    }}
-                    h={40}
-                    w={40}
-                    mb={2}
-                    resizeMode="contain"
-                  />
-                  <Text
-                    style={[
-                      styles.catTitle,
-                      {
-                        fontFamily: getFontNameType(appFontFamily, "Regular"),
-                      },
-                    ]}
-                  >
-                    {item.title}
-                  </Text>
-                </Div>
+                <TouchableOpacity
+                  onPress={() => {
+                    navigation.navigate("ProductsScreen", {
+                      title: item.title,
+                    });
+                  }}
+                >
+                  <Div style={styles.catCard} mr={5} py={5} px={5}>
+                    <Image
+                      rounded={10}
+                      source={{
+                        uri: item.image,
+                      }}
+                      h={40}
+                      w={40}
+                      mb={2}
+                      resizeMode="contain"
+                    />
+                    <Text
+                      style={[
+                        styles.catTitle,
+                        {
+                          fontFamily: getFontNameType(appFontFamily, "Regular"),
+                        },
+                      ]}
+                    >
+                      {item.title}
+                    </Text>
+                  </Div>
+                </TouchableOpacity>
               )}
             />
           </SafeView>
@@ -143,25 +151,33 @@ const HomeScreen = () => {
             autoPlayInterval={6000}
             onSnapToItem={(index) => console.log("current index:", index)}
             renderItem={({ index }) => (
-              <Div w={deviceWidth} px={10}>
-                <Image
-                  rounded={10}
-                  source={{ uri: sliderImages[index] }}
-                  h={deviceWidth / 2}
-                  w={deviceWidth - 20}
-                  resizeMode="cover"
-                />
-              </Div>
+              <TouchableOpacity
+                onPress={() => {
+                  navigation.navigate("ProductsScreen", {
+                    title: '50% off on "All"',
+                  });
+                }}
+              >
+                <Div w={deviceWidth} px={10}>
+                  <Image
+                    rounded={10}
+                    source={{ uri: sliderImages[index] }}
+                    h={deviceWidth / 2}
+                    w={deviceWidth - 20}
+                    resizeMode="cover"
+                  />
+                </Div>
+              </TouchableOpacity>
             )}
           />
           <SafeView mb={10}>
             <BaseTitle
-              title="Deals of the Day"
               onPress={() => {
                 navigation.navigate("ProductsScreen", {
                   title: "Deals of the Day",
                 });
               }}
+              title="Deals of the Day"
             />
             <FlatList
               showsHorizontalScrollIndicator={false}
@@ -175,7 +191,14 @@ const HomeScreen = () => {
             />
           </SafeView>
           <SafeView mb={10}>
-            <BaseTitle title="Customer's Choices" />
+            <BaseTitle
+              onPress={() => {
+                navigation.navigate("ProductsScreen", {
+                  title: "Deals of the Day",
+                });
+              }}
+              title="Customer's Choices"
+            />
             <FlatList
               showsHorizontalScrollIndicator={false}
               horizontal
@@ -188,7 +211,14 @@ const HomeScreen = () => {
             />
           </SafeView>
           <SafeView mb={10}>
-            <BaseTitle title="Top Categories" />
+            <BaseTitle
+              onPress={() => {
+                navigation.navigate("ProductsScreen", {
+                  title: "Deals of the Day",
+                });
+              }}
+              title="Top Categories"
+            />
             <FlatList
               data={[
                 "https://loox.com.bd/cdn-cgi/imagedelivery/IEVmOmAlrv1BxorgilY5Og/e05cfb8a-e706-4269-be37-0cfcb5084000/public270x360",
@@ -218,7 +248,14 @@ const HomeScreen = () => {
             />
           </SafeView>
           <SafeView mb={10}>
-            <BaseTitle title="Customer's Choices" />
+            <BaseTitle
+              onPress={() => {
+                navigation.navigate("ProductsScreen", {
+                  title: "Deals of the Day",
+                });
+              }}
+              title="Customer's Choices"
+            />
             <FlatList
               showsHorizontalScrollIndicator={false}
               horizontal
@@ -231,7 +268,14 @@ const HomeScreen = () => {
             />
           </SafeView>
           <SafeView mb={10}>
-            <BaseTitle title="Customer's Choices" />
+            <BaseTitle
+              onPress={() => {
+                navigation.navigate("ProductsScreen", {
+                  title: "Deals of the Day",
+                });
+              }}
+              title="Customer's Choices"
+            />
             <FlatList
               showsHorizontalScrollIndicator={false}
               horizontal
@@ -244,7 +288,14 @@ const HomeScreen = () => {
             />
           </SafeView>
           <SafeView mb={10}>
-            <BaseTitle title="Customer's Choices" />
+            <BaseTitle
+              onPress={() => {
+                navigation.navigate("ProductsScreen", {
+                  title: "Deals of the Day",
+                });
+              }}
+              title="Customer's Choices"
+            />
             <FlatList
               showsHorizontalScrollIndicator={false}
               horizontal
@@ -257,7 +308,14 @@ const HomeScreen = () => {
             />
           </SafeView>
           <SafeView mb={10}>
-            <BaseTitle title="Customer's Choices" />
+            <BaseTitle
+              onPress={() => {
+                navigation.navigate("ProductsScreen", {
+                  title: "Deals of the Day",
+                });
+              }}
+              title="Customer's Choices"
+            />
             <FlatList
               showsHorizontalScrollIndicator={false}
               horizontal
@@ -270,7 +328,14 @@ const HomeScreen = () => {
             />
           </SafeView>
           <SafeView mb={10}>
-            <BaseTitle title="Customer's Choices" />
+            <BaseTitle
+              onPress={() => {
+                navigation.navigate("ProductsScreen", {
+                  title: "Deals of the Day",
+                });
+              }}
+              title="Customer's Choices"
+            />
             <FlatList
               showsHorizontalScrollIndicator={false}
               horizontal

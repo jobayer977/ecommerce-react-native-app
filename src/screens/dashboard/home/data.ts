@@ -14,7 +14,7 @@ export class Product {
 
   static pinkChair(): Product {
     return new Product(
-      "Pink Chair",
+      "Pink",
       "Furniture",
       "The Vitra Plastic Side Chairs are undoubtedly an absolute classic when it comes to the living area. The unusual mix of a plastic seat shell and wooden frame has since become a source of inspiration for many designers.",
       "150$",
